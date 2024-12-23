@@ -1,0 +1,311 @@
+
+
+body {
+  font-family: "Roboto", serif;
+}
+
+
+/* components */
+.primary-btn {
+  outline: #333 1px solid;
+  color: #333;
+  background-color: transparent;
+}
+
+.primary-btn:hover {
+  outline: #333 1px solid;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* General Tab Styles */
+.brand-tabs .nav-link {
+  border: none; /* Remove default borders */
+  border-bottom: 2px solid transparent; /* Add bottom border */
+  color: #333; /* Tab text color */
+  font-size: 16px; /* Adjust font size */
+  padding: 10px 16px; /* Spacing around tab */
+  transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  background-color: transparent; /* Ensure background is transparent */
+}
+
+.brand-tabs .nav-link.active {
+  border-bottom: 2px solid #ffadad; /* Active tab bottom border color */
+  color: #ffadad; /* Active tab text color */
+  background-color: transparent; /* Active tab background remains transparent */
+}
+
+/* Hover Styles for Desktop */
+@media (min-width: 768px) {
+  .brand-tabs .nav-link {
+    cursor: pointer;
+  }
+
+  .brand-tabs .nav-link:hover {
+    border-bottom: 2px solid #ffadad; /* Hover underline */
+    color: #ffadad; /* Hover text color */
+    background-color: transparent; /* Ensure no background color on hover */
+  }
+}
+
+
+/* navbar */
+/* Navbar initial style */
+.navbar {
+  background-color: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transform: translateY(0px);
+}
+
+.navbar.scrolled {
+  transition: transform .75s ease-in !important;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: -200px;
+  transform: translateY(200px);
+}
+
+.navbar .nav-link {
+  color: #000000;
+  font-weight: 400 !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: black;
+}
+
+.navbar .navbar-brand {
+  color: #000000;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: #000000;
+}
+
+/* Hover dropdown on larger screens (desktop) */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover for desktop */
+  }
+}
+
+/* For mobile, use Bootstrap's default behavior */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    display: none; /* Ensure dropdown is hidden initially on mobile */
+  }
+  .nav-item.dropdown.open .dropdown-menu {
+    display: block; /* Show dropdown when clicked on mobile */
+  }
+}
+
+/* Default navbar color (transparent or dark background) */
+#ftco-navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* When the navbar is expanded on mobile, set background color to white */
+#ftco-navbar.navbar-open {
+  background-color: #ffffff !important;
+}
+
+#ftco-navbar.navbar-open, #ftco-navbar.navbar-open.scrolled {
+    transition: all 0s !important;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: unset;
+    transform: unset;
+  }
+
+#ftco-navbar.navbar-open .navbar-brand {
+  color: #000000;
+}
+
+/* Optionally, you can change the text color or add a box-shadow for better visibility */
+#ftco-navbar.navbar-open .navbar-nav .nav-link {
+  color: #000000 !important; /* Change link color to black when navbar is white */
+}
+
+.navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #000000;
+}
+
+.navbar.scrolled .navbar-toggler,
+.navbar-open .navbar-toggler {
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+/* navbar end */
+
+/* footer start */
+footer {
+    background-color: #141313;
+}
+
+footer p, footer li, footer a{
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+footer li, footer a{
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+footer p{
+    font-size: .85rem;
+}
+
+footer .address li {
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+footer .address li a {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+footer .address li i{
+    font-size: 1rem;
+    
+}
+/* footer end */
+
+
+
+/* hero silder */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-slider .swiper-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-slider .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-slider .content {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.hero-slider .hero-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-slider .hero-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* hero slider end */
+
+/* Video Section */
+#video-section {
+  position: relative;
+}
+
+#video-section .video-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#video-section .video-poster {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#video-section .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none; /* Prevent blocking poster clicks */
+}
+
+#video-section iframe {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#video-section .play-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 50%;
+}
+/* video section end */
+
+
+/* services */
+
+#services a, #services svg {
+  color: #ffadad;
+}
+/* services end */
+
+
+/* why choose us section */
+#why-choose .single-card {
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+#why-choose .single-card .icon {
+  font-size: 3rem;
+  color: #787878; ;
+}
+
+#why-choose .single-card .text {
+  font-size: 1.2rem;
+}

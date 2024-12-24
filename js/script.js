@@ -71,3 +71,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+
+
+// design steps slider
+var swiper = new Swiper(".design-steps-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

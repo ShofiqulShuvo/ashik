@@ -311,6 +311,8 @@ footer .address li i{
 
 /* interesting facts */
 .interesting-facts .card {
+  width: 100%;
+  height: 100%;
   border-bottom: #ffadad solid 3px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

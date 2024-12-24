@@ -18,6 +18,46 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* video style */
+.video-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-poster {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none; /* Prevent blocking poster clicks */
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.play-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 50%;
+}
+/* video style end */
+
 /* General Tab Styles */
 .brand-tabs .nav-link {
   border: none; /* Remove default borders */
@@ -238,49 +278,10 @@ footer .address li i{
 
 /* hero slider end */
 
-/* Video Section */
 #video-section {
   position: relative;
 }
 
-#video-section .video-wrapper {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-#video-section .video-poster {
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-#video-section .play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  pointer-events: none; /* Prevent blocking poster clicks */
-}
-
-#video-section iframe {
-  aspect-ratio: 16 / 9;
-  height: 100%;
-  width: 100%;
-  border: none;
-}
-
-#video-section .play-button {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border-radius: 50%;
-}
-/* video section end */
 
 
 /* services */

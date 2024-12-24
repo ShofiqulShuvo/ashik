@@ -18,6 +18,18 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.brand-btn {
+  font-size: 1.3rem;
+  border: 1px solid #ffadad;
+  color: #333;
+}
+
+.brand-btn:hover {
+  background-color: #333 ;
+  border-color: #333;
+  color: #fff;
+}
+
 /* video style */
 .video-wrapper {
   position: relative;
@@ -92,17 +104,7 @@ iframe {
 #generic-hero {
   background-color: #f6f6f6;
 }
-#generic-hero .primary-btn {
-  font-size: 1.3rem;
-  border: 1px solid #ffadad;
-  color: #333;
-}
 
-#generic-hero .primary-btn:hover {
-  background-color: #333 ;
-  border-color: #333;
-  color: #fff;
-}
 /* generic hero style end */
 
 

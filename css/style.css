@@ -103,7 +103,66 @@ iframe {
   border-color: #333;
   color: #fff;
 }
-/* generic hero style */
+/* generic hero style end */
+
+
+/* timeline style  */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 33%;
+  width: 2px;
+  background-color: #ffadad;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(33% - 10px);
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--bs-primary);
+  border: 2px solid var(--bs-white);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-body {
+  position: relative;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 30%;
+  text-align: right;
+}
+
+.timeline-content {
+  margin-left: 35%;
+  padding: 1rem;
+}
+
+/* timeline style end */
 
 
 /* navbar */

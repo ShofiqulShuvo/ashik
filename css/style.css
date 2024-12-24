@@ -306,3 +306,15 @@ footer .address li i{
 #why-choose .single-card .text {
   font-size: 1.2rem;
 }
+
+
+
+/* interesting facts */
+.interesting-facts .card {
+  border-bottom: #ffadad solid 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.interesting-facts .card .icon i {
+  font-size: 3rem;
+}

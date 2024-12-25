@@ -346,6 +346,17 @@ footer .address li i{
     font-size: 1rem;
     
 }
+
+footer .social-icon {
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
 /* footer end */
 
 
